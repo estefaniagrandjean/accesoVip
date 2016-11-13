@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acceso Vip</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png">
+      </div>
+      <div class="headerSearchs"></div>
+      <nav>
+        <ul id="menu">
+          <li><a href="" class="">Registrate</a></li>
+          <li><a href="" class="">Ingresar</a></li>
+          <li><a href="" class="fav" id="fav"><i class="fa fa-heart-o fa-lg"></i> <small>1</small><span> Favoritos</span></a></li>
+          <li><a href="" class="shopping" id="shopping"><i class="fa fa-shopping-cart fa-lg"></i> <small>2</small><span> Compras</span></a></li>
+          <li><a href="" class="profile">
+            My Profile<span class="profileImg"><img src="images/profile.png"></span>
+          </a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="registro">
+      <div class="triangle"></div>
+      <h1>Crea tu cuenta</h1>
+      <span class="separator"></span>
+      <a href="" class="fbLogin"><i class="fa fa-facebook" aria-hidden="true"></i>facebook</a>
+      <form class="ingreso">
+        <label>Nombre de usuario o EMAIL</label>
+        <input type="text">
+        <label>Contraseña</label>
+        <input type="password">
+        <label>Repetir Contraseña</label>
+        <input type="password">
+        <input type="submit" value="Crear Cuenta">
+      </form>
+    </div><!-- cierra now -->
+
+    
+    <div class="now">
+      <div class="triangle"></div>
+      <h1>Ingresa</h1>
+      <span class="separator"></span>
+      <a href="" class="fbLogin"><i class="fa fa-facebook" aria-hidden="true"></i>facebook</a>
+      <form class="ingreso">
+        <label>Nombre de usuario o EMAIL</label>
+        <input type="text">
+        <label>Contraseña</label>
+        <input type="password">
+        <input type="submit" value="Ingresar">
+        <a href="" class="forgot">¿Olvidaste tu Usuario o Contraseña?</a>
+      </form>
+    </div><!-- cierra now -->
+
+    <div class="favMenu" id="favMenu">
+      <div class="triangle"></div>
+      <h2>Favoritos</h2>
+      <div class="favEvents">
+
+          <div class="favEventBox">
+            <img src="images/2.jpg" alt="" class="">
+            <div class="favDescription">
+              <h3>AEROSMITH</h3>
+              <h4>Hipodromo Argentino</h4>
+              <h5>27-Nov- 2016</h5>
+            </div>
+            <button class="deleteFav"></button>
+          </div>
+          <div class="favEventBox">
+            <img src="images/1.jpg" alt="" class="">
+            <div class="favDescription">
+              <h3>Black Sabbath</h3>
+              <h4>Orfeo Superdomo Córdoba</h4>
+              <h5>23-Nov- 2016</h5>
+            </div>
+            <button class="deleteFav"></button>
+          </div>
+          <div class="favEventBox">
+            <img src="images/3.jpg" alt="" class="">
+            <div class="favDescription">
+              <h3>Lollapalooza Argentina 2017</h3>
+              <h4>Hipódromo de San Isidro</h4>
+              <h5>31-Mar- 2017</h5>
+            </div>
+            <button class="deleteFav"></button>
+          </div>
+
+      </div><!-- cierra favEvents -->
+      <div class="favMore">
+        <a href="">Ver todos</a>
+      </div>
+    </div><!-- cierra fav -->
+    <div class="misCompras">
+      <div class="triangle"></div>
+      <h2>Mis Entradas</h2>
+      <button class="closeC"></button>
+      <div class="comEvents">
+
+          <div class="comEventBox">
+            <img src="images/2.jpg" alt="" class="">
+            <div class="comDescription">
+              <h3>AEROSMITH</h3>
+            </div>
+            <div class="price">$500</div>
+          </div>
+          <div class="comEventBox">
+            <img src="images/1.jpg" alt="" class="">
+            <div class="comDescription">
+              <h3>Black Sabbath</h3>
+            </div>
+            <div class="price">$350</div>
+          </div>
+          <div class="comEventBox">
+            <img src="images/3.jpg" alt="" class="">
+            <div class="comDescription">
+              <h3>Lollapalooza Argentina 2017</h3>
+            </div>
+            <div class="price">$270</div>
+          </div>
+
+      </div><!-- cierra comEvents -->
+      <div class="comMore">
+        <a href="">Ver todos</a>
+      </div>
+    </div><!-- cierra MisCompras -->
+
+    <section class="search">
+      <div class="searchForm">
+        <h1>Compra y Vende tus entradas en un solo lugar</h1>
+        <form>
+          <input type="text" name="search" placeholder="BUSCA TU ENTRADA">
+          <button type="submit" value="buscar" name="buscar" class="fontBold"><i class="fa fa-search" aria-hidden="true"></i>buscar</button>
+        </form>
+        <a href="" class="sellTicket fontBold"><span></span>Vende tu entrada</a>
+      </div>
+      <div class="services">
+        <ul>
+          <li>
+            <a href="" class="fontBold"><i class="sArrow"></i>ENCUENTRA LA ENTRADA IDEAL</a>
+          </li>
+          <li>
+            <a href="" class="fontBold"><i class="sTruck"></i>RECÍBELO COMODAMENTE</a>
+          </li>
+          <li>
+            <a href="" class="fontBold"><i class="sComm"></i>Servicios corporativos</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <main>
+      <section class="mainEvents">
+      <div class="mainTitles">
+        <h3 class="fontBold">Eventos destacados</h3>
+        <a href="">+ ver listado completo</a>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagDeporte"><i class="ticket"></i>Recitales</span>
+              <img src="images/img2.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath</h3>
+               <h4>Estadio Unico de La Plata</h4>
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+              </figcaption>  
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagFestivales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath</h3>
+               <h4>Estadio Unico de La Plata</h4>
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+              </figcaption>  
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img3.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath</h3>
+               <h4>Estadio Unico de La Plata</h4>
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+              </figcaption>  
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath</h3>
+               <h4>Estadio Unico de La Plata</h4>
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+              </figcaption>  
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath</h3>
+               <h4>Estadio Unico de La Plata</h4>
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+              </figcaption>  
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img3.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath</h3>
+               <h4>Estadio Unico de La Plata</h4>
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+              </figcaption>  
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath</h3>
+               <h4>Estadio Unico de La Plata</h4>
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+              </figcaption>  
+            </figure>
+        </div>
+
+      </div><!-- close Row -->
+
+      </section>
+      <section class="ad">
+        <div class="row">
+          <div class="adBox">
+            <img src="images/ad.jpg" alt="Publicidad">
+            <small>espacio publicitario</small>
+          </div>
+          
+        </div>
+      </section>
+      <section class="upcoming">
+        <div class="mainTitles">
+          <h3 class="fontBold">Proximos eventos</h3>
+          <a href="" class="">+ ver listado completo</a>
+        </div>
+        <div id="tabs1" class="tabs">
+          <ul>
+            <li><a href="#tabs-1">Esta Semana</a></li>
+            <li><a href="#tabs-2">Este Mes</a></li>
+            <li><a href="#tabs-3">Este Finde</a></li>
+          </ul>
+          <div id="tabs-1" class="tab1">
+              <div class="row">
+                
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+        
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img2.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+        
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+        
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img3.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+              </div><!-- cierra row-->
+            </div>
+            <div id="tabs-2" class="tab1">
+              <div class="row">
+                <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img3.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+
+                 <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+                  <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+                  <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img2.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+              </div><!-- cierra row-->
+        </div><!-- cierra tab -->
+            <div id="tabs-3" class="tab1">
+              <div class="row">
+                <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img2.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black Sabbath Black </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+
+        <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img2.jpg" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+                  <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+                  <div class="col-lg-3">
+            <figure class="boxHover">
+              <span class="tagType tagRecitales"><i class="ticket"></i>Recitales</span>
+              <img src="images/img.png" alt="img25"/>
+              <figcaption>
+               <h3>Black Sabbath Black SabbathBlack </h3>
+               <h4>Estadio Unico de La Plata</h4>
+               <div class="buttonAction">
+                <a class="buy">comprar</a>
+                <a class="sell">vender</a>
+               </div>
+              </figcaption>  
+            </figure>
+        </div>
+              </div><!-- cierra row-->
+        </div><!-- cierra tab -->
+      </section>
+      <section class="categoryEvents">
+      <div class="mainTitles">
+          <h3 class="fontBold"><span>Eventos por </span>Categorías</h3>
+      </div>
+       <div id="tabs2" class="tabs tabsCategoria">
+          <ul>
+            <li><a href="#sec1">Deportes</a></li>
+            <li><a href="#sec2">Festivales</a></li>
+            <li><a href="#sec3">Recitales</a></li>
+            <li><a href="#sec4">Teatro</a></li>
+          </ul>
+          <div id="sec1" class="tab1">
+             <div class="tabCategoria">
+               <div class="catImg">
+                 <img src="images/deporte.jpg" alt="Imagen de categoria" id="imgChange">
+               </div>
+               <div class="catTable">
+                <table>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                </table>
+                <a href="" class="verMasTab">+ Ver listado completo</a>
+               </div>
+             </div>
+
+          </div>
+          <div id="sec2" class="tab1">
+              <div class="tabCategoria">
+               <div class="catImg">
+                 <img src="images/deporte.jpg" alt="Imagen de categoria" id="imgChange">
+               </div>
+               <div class="catTable">
+                <table>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Test1</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                </table>
+                <a href="" class="verMasTab">+ Ver listado completo</a>
+               </div>
+             </div>
+          </div>
+          <div id="sec3" class="tab1">
+             <div class="tabCategoria">
+               <div class="catImg">
+                 <img src="images/deporte.jpg" alt="Imagen de categoria" id="imgChange">
+               </div>
+               <div class="catTable">
+                <table>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Test2</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                </table>
+                <a href="" class="verMasTab">+ Ver listado completo</a>
+               </div>
+             </div>
+          </div>
+          <div id="sec4" class="tab1">
+             <div class="tabCategoria">
+               <div class="catImg">
+                 <img src="images/deporte.jpg" alt="Imagen de categoria" id="imgChange">
+               </div>
+               <div class="catTable">
+                <table>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Test3</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td class="buttons">
+                      <button class="buy">comprar</button>
+                      <button class="sell">vender</button>
+                    </td>
+                  </tr>
+                </table>
+                <a href="" class="verMasTab">+ Ver listado completo</a>
+               </div>
+             </div>
+          </div>
+        </div><!-- cierra tab -->
+      </section>
+      <section class="ad">
+          <div class="row">
+          <div class="adBox">
+            <img src="images/ad.jpg" alt="Publicidad">
+            <small>espacio publicitario</small>
+          </div>
+        </div>
+      </section>
+      <section class="tags">
+      <div class="row">
+        <div class="tagBox col-sm-3">
+          <h3 class="fontBold">Concierto</h3>
+          <a href="">Julio Iglesias</a>
+          <a href="">Diego Torres</a>
+          <a href=""> Illya Kuryaki & the Valderramas</a>
+          <a href="">Luciano Pereyra </a>
+        </div>
+        <div class="tagBox col-sm-3">
+          <h3 class="fontBold">Festivales</h3>
+          <a href="">Julio Iglesias</a>
+          <a href="">Diego Torres</a>
+          <a href=""> Illya Kuryaki & the Valderramas</a>
+          <a href="">Luciano Pereyra </a>
+        </div>
+        <div class="tagBox col-sm-3">
+          <h3 class="fontBold">Teatro</h3>
+          <a href="">Julio Iglesias</a>
+          <a href="">Diego Torres</a>
+          <a href=""> Illya Kuryaki & the Valderramas</a>
+          <a href="">Luciano Pereyra </a>
+        </div>
+        <div class="tagBox col-sm-3">
+          <h3 class="fontBold">Deportes</h3>
+          <a href="">Julio Iglesias</a>
+          <a href="">Diego Torres</a>
+          <a href=""> Illya Kuryaki & the Valderramas</a>
+          <a href="">Luciano Pereyra </a>
+        </div>
+      </div>
+      </section>
+      <section class="mediaBox">
+        <div class="mainTitles">
+          <h3 class="fontBold">En los medios</h3>
+        </div>
+          <div class="logosMedia row">
+            <div class="col-sm-3">
+              <img src="images/bae.png" alt="BAE">
+            </div>
+            <div class="col-sm-3">
+              <img src="images/clarin.png" alt="Clarin">
+            </div>
+            <div class="col-sm-3">
+              <img src="images/cronista.png" alt="Cronista">
+            </div>
+            <div class="col-sm-3">
+              <img src="images/lanacion.png" alt="La Nacion" />
+            </div>
+          </div>
+      </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footerContent">
+        <div class="map">
+          <div class="bottomMenu">
+            <ul>
+             <li><a href="" class="fontBold">acceso vip</a></li>
+             <li><a href="" class="fontBold">info legal</a></li>
+             <li><a href="" class="fontBold">faq</a></li>
+             <li><a href="" class="fontBold">contacto</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="legal">
+          <div class="row">
+            <div class="col-md-3">
+              <small>Copyright ACCESO VIP ® 2016</small>
+            </div>
+            <div class="col-md-6 payment">
+              <a href=""><img src="images/ml.png" alt="Mercado Libre"></a>
+              <a href=""><img src="images/paypal.png" alt="Paypal" ></a>
+              <a href=""><img src="images/visa.png" alt="Visa" ></a>
+              <a href=""><img src="images/master.png" alt="MasterCard" ></a>
+            </div>
+            <div class="col-md-3 suscribe">
+              <form>
+                <input type="email" placeholder="SUSCRIBETE" />
+                <button><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/slicknav.js"></script> />
+    <script src="js/bootstrap.min.js"></script>
+      <script>
+      $(document).ready(function(){ 
+          $( "#tabs1" ).tabs();
+          $("#tabs2").tabs();
+          $('#menu').slicknav({
+            label: ''
+            });  
+       });
+      </script>
+  </body>
+</html>
