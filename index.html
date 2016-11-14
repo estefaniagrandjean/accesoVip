@@ -24,17 +24,17 @@
       <div class="headerSearchs"></div>
       <nav>
         <ul id="menu">
-          <li><a href="" class="">Registrate</a></li>
-          <li><a href="" class="">Ingresar</a></li>
-          <li><a href="" class="fav" id="fav"><i class="fa fa-heart-o fa-lg"></i> <small>1</small><span> Favoritos</span></a></li>
-          <li><a href="" class="shopping" id="shopping"><i class="fa fa-shopping-cart fa-lg"></i> <small>2</small><span> Compras</span></a></li>
+          <li><button class="register" id="register">Registrate</button></li>
+          <li><button class="login" id="login">Ingresar</button></li>
+          <li><button class="fav" id="fav"><i class="fa fa-heart-o fa-lg"></i> <small>1</small><span> Favoritos</span></button></li>
+          <li><button class="shopping" id="shopping"><i class="fa fa-shopping-cart fa-lg"></i> <small>2</small><span> Compras</span></button></li>
           <li><a href="" class="profile">
             My Profile<span class="profileImg"><img src="images/profile.png"></span>
           </a></li>
         </ul>
       </nav>
     </header>
-    <div class="registro">
+    <div class="registro" id="registro" style="display: none;">
       <div class="triangle"></div>
       <h1>Crea tu cuenta</h1>
       <span class="separator"></span>
@@ -51,7 +51,7 @@
     </div><!-- cierra now -->
 
     
-    <div class="now">
+    <div class="now" id="now" style="display: none;">
       <div class="triangle"></div>
       <h1>Ingresa</h1>
       <span class="separator"></span>
@@ -74,7 +74,7 @@
           <div class="favEventBox">
             <img src="images/2.jpg" alt="" class="">
             <div class="favDescription">
-              <h3>AEROSMITH</h3>
+              <a href=""><h3>AEROSMITH</h3></a>
               <h4>Hipodromo Argentino</h4>
               <h5>27-Nov- 2016</h5>
             </div>
@@ -83,7 +83,7 @@
           <div class="favEventBox">
             <img src="images/1.jpg" alt="" class="">
             <div class="favDescription">
-              <h3>Black Sabbath</h3>
+              <a href=""><h3>Black Sabbath</h3></a>
               <h4>Orfeo Superdomo Córdoba</h4>
               <h5>23-Nov- 2016</h5>
             </div>
@@ -92,7 +92,7 @@
           <div class="favEventBox">
             <img src="images/3.jpg" alt="" class="">
             <div class="favDescription">
-              <h3>Lollapalooza Argentina 2017</h3>
+              <a href=""><h3>Lola</h3></a>
               <h4>Hipódromo de San Isidro</h4>
               <h5>31-Mar- 2017</h5>
             </div>
@@ -104,30 +104,31 @@
         <a href="">Ver todos</a>
       </div>
     </div><!-- cierra fav -->
-    <div class="misCompras">
+
+    <div class="misCompras" id="misCompras">
       <div class="triangle"></div>
       <h2>Mis Entradas</h2>
-      <button class="closeC"></button>
+      <button class="closeC" id="closeC"></button>
       <div class="comEvents">
 
           <div class="comEventBox">
             <img src="images/2.jpg" alt="" class="">
             <div class="comDescription">
-              <h3>AEROSMITH</h3>
+              <a href=""><h3>AEROSMITH</h3></a>
             </div>
             <div class="price">$500</div>
           </div>
           <div class="comEventBox">
             <img src="images/1.jpg" alt="" class="">
             <div class="comDescription">
-              <h3>Black Sabbath</h3>
+              <a href=""><h3>Black Sabbath</h3></a>
             </div>
             <div class="price">$350</div>
           </div>
           <div class="comEventBox">
             <img src="images/3.jpg" alt="" class="">
             <div class="comDescription">
-              <h3>Lollapalooza Argentina 2017</h3>
+              <a href=""><h3>Lollapalooza Argentina 2017</h3></a>
             </div>
             <div class="price">$270</div>
           </div>
@@ -503,21 +504,21 @@
                <div class="catTable">
                 <table>
                   <tr>
-                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td><a href="" id="imgSwiper1">Wimpledon Argentina 2016</a></td>
                     <td class="buttons">
                       <button class="buy">comprar</button>
                       <button class="sell">vender</button>
                     </td>
                   </tr>
                   <tr>
-                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td><a href="" id="imgSwiper2">Wimpledon Argentina 2016</a></td>
                     <td class="buttons">
                       <button class="buy">comprar</button>
                       <button class="sell">vender</button>
                     </td>
                   </tr>
                   <tr>
-                    <td><a href="" id="imgSwiper">Wimpledon Argentina 2016</a></td>
+                    <td><a href="" id="imgSwiper3">Wimpledon Argentina 2016</a></td>
                     <td class="buttons">
                       <button class="buy">comprar</button>
                       <button class="sell">vender</button>
@@ -732,14 +733,70 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/slicknav.js"></script> />
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/outside.js"></script>
       <script>
       $(document).ready(function(){ 
           $( "#tabs1" ).tabs();
           $("#tabs2").tabs();
           $('#menu').slicknav({
             label: ''
-            });  
-       });
+            }); 
+          $( "#register" ).click(function() {
+              $( "#registro" ).slideDown( );
+            });
+          $( "#login" ).click(function() {
+              $( "#now" ).slideDown( );
+            }); 
+          $( "#fav" ).click(function() {
+              $( "#favMenu" ).slideDown( );
+            }); 
+          $( "#shopping" ).click(function() {
+              $( "#misCompras" ).fadeIn();
+            }); 
+          $( "#closeC" ).click(function() {
+              $( "#misCompras" ).fadeOut();
+            });
+
+          $('#registro').outclick(function() {
+            $( "#registro" ).fadeOut();
+         });
+
+           $('#now').outclick(function() {
+            $( "#now" ).fadeOut();
+         });
+
+           $('#favMenu').outclick(function() {
+            $( "#favMenu" ).fadeOut();
+         });
+
+            $('#misCompras').outclick(function() {
+            $( "#misCompras" ).fadeOut();
+         });
+
+
+        $("#imgSwiper1").mouseenter(function(){       
+            $("#imgChange").attr('src','images/img3.jpg');      
+        });     
+        $("#imgSwiper1").mouseleave(function(){       
+            $("#imgChange").attr('src','images/deporte.jpg');      
+        }); 
+
+         $("#imgSwiper2").mouseenter(function(){       
+            $("#imgChange").attr('src','images/img2.jpg');      
+        });     
+        $("#imgSwiper2").mouseleave(function(){       
+            $("#imgChange").attr('src','images/deporte.jpg');      
+        }); 
+
+         $("#imgSwiper3").mouseenter(function(){       
+            $("#imgChange").attr('src','images/img.png');      
+        });     
+        $("#imgSwiper3").mouseleave(function(){       
+            $("#imgChange").attr('src','images/deporte.jpg');      
+        }); 
+
+      });
+
       </script>
   </body>
 </html>
